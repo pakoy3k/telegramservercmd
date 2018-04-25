@@ -5,7 +5,7 @@ import os
 from pprint import pprint
 reload(sys)
 sys.setdefaultencoding('utf-8')
-bot = telepot.Bot('408287657:AAE_T4LttndaYtCezlmfos31cNe5I0Jm4JI')
+bot = telepot.Bot('01234567:PAK_00112358132133') # token
 
 
 def handle(msg):
@@ -18,7 +18,7 @@ def on_chat_message(msg):
     cmd = msg['text']
     print cmd
     if cmd == "/start":
-        bot.sendMessage(chat_id, "Inicio de crontab")
+        bot.sendMessage(chat_id, "Server cmd TelegramBot")
     if cmd == "/ls":
         f = os.popen('ls')
         cmd = f.read()
